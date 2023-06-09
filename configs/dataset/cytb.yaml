@@ -1,0 +1,7 @@
+# @package _group_
+
+# name: ytb_${dataset.resolution}
+name: s3://qihang/ytb_${dataset.resolution}
+dataset_jsonpath: /mnt/lustre/yangceyuan/code/qihang/stylegan-v/ytb.json
+fps: 25
+chunk: 512

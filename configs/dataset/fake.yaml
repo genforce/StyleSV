@@ -1,0 +1,7 @@
+# @package _group_
+
+name: s3://qihang/fake_${dataset.resolution}
+dataset_jsonpath: /mnt/lustre/yangceyuan/code/qihang/stylegan-v/ucf.json
+resolution: 256
+fps: 25
+# c_dim: 101
