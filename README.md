@@ -1,7 +1,15 @@
 # Towards Smooth Video Composition (ICLR 2023)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-smooth-video-composition/video-generation-on-sky-time-lapse)](https://paperswithcode.com/sota/video-generation-on-sky-time-lapse?p=towards-smooth-video-composition)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-smooth-video-composition/video-generation-on-taichi)](https://paperswithcode.com/sota/video-generation-on-taichi?p=towards-smooth-video-composition)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-smooth-video-composition/video-generation-on-youtube-driving)](https://paperswithcode.com/sota/video-generation-on-youtube-driving?p=towards-smooth-video-composition)
+
 [Project website](https://genforce.github.io/StyleSV/) |
 [Paper](https://openreview.net/pdf?id=W918Ora75q)
+
+![](./assets/stylesv_cover.jpg)
 
 ## Installation
 To install and activate the environment, run the following command:
@@ -70,6 +78,7 @@ To sample from the model, launch the following command:
 python src/scripts/generate.py --network_pkl /path/to/network-snapshot.pkl --num_videos 25 --as_grids true --save_as_mp4 true --fps 25 --video_len 128 --batch_size 25 --outdir /path/to/output/dir --truncation_psi 0.9
 ```
 This will sample 25 videos of 25 FPS as a 5x5 grid with the truncation factor of 0.9. Each video consists of 128 frames. Adjust the corresponding arguments to change the settings.
+Here, we provide a [checkpoint](https://www.dropbox.com/s/63qug26elmz5zqe/ytb_driving_cfg_d.pkl?dl=0) trained on YouTube Driving dataset.
 
 To sample content/motion decomposition grids, use `--moco_decomposition 1` by running the following command:
 
